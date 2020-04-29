@@ -6,7 +6,12 @@ namespace examination_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+          Rectangle rect = new Rectangle(5,5);
+          Console.WriteLine(rect.Area);
+          Console.WriteLine(rect.Perimeter);
+          Elipse eli = new Elipse(30);
+          Console.WriteLine(eli.Area);
+          Console.WriteLine(eli.Perimeter);
         }
     }
 }
