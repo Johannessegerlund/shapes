@@ -2,24 +2,31 @@ using System;
 
 namespace examination_2
 {
-    class Rectangle
+    class Rectangle : Shape2D
     {
 
-      private int _width;
-      private int _hight;
-        public Rectangle (int width, int hight)
+      
+        public Rectangle (double width, double length ) : base(ShapeType.Rectangle, width, length) 
         {
-            _width = width;
-            _hight = hight;
+            Width = width;
+            Length = length;
+            
             
         }
-        public double Area 
+        public override double Area 
         {
-            get{return _width * _hight;}
+            get
+            {
+            return Width * Length;
+            }
         }
 
-        public double Perimeter {
-            get{return _width * 2 + _hight * 2;}
+        public override double Perimeter 
+        {
+            get
+            {
+            return Width * 2.0 + Length * 2.0;
+            }
         }
     }
 }

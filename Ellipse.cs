@@ -2,7 +2,7 @@ using System;
 
 namespace examination_2
 {
-    class Elipse
+    class Ellipse : Shape2D
     {
 
       private double _diameter;
@@ -16,19 +16,23 @@ namespace examination_2
 
       private double _b;
       
-        public Elipse (double diameter)
+        public Ellipse (double diameter): base(ShapeType.Ellipse, diameter, diameter ) 
         {
             _radie = diameter/2;
             _diameter = diameter;
+            
         }
 
-        public Elipse (double vdiameter, double hdiameter) {
-          _a = _vdiameter / 2;
-          _b = _hdiameter / 2;
+        public Ellipse (double vdiameter, double hdiameter): base(ShapeType.Ellipse, vdiameter, hdiameter ) 
+        {
+          _a = vdiameter / 2.0;
+          _b = hdiameter / 2.0;
           _vdiameter = vdiameter;
           _hdiameter = hdiameter;
+          
+
         }
-        public double Area 
+        public override double Area 
         {
           
             get{
@@ -41,12 +45,12 @@ namespace examination_2
                 }
         }
 
-        public double Perimeter 
+        public override double Perimeter 
         {
           get{
           if(_vdiameter != _hdiameter ) 
           {
-            return Math.PI * Math.Sqrt(_a * 2 + _b * 2);
+            return Math.PI * Math.Sqrt((2.0 *_a)*(2.0 *_a)  + (2.0 * _b)*(2.0 * _b) );
           } else 
           {
              return 2 * Math.PI * _radie;

@@ -2,13 +2,52 @@ using System;
 
 namespace examination_2
 {
-    class shape
+    public abstract class Shape
     {
-        static void main (string[] args)
+      
+      protected Shape (ShapeType shapeType)
+      {
+      
+      }
+
+
+      public abstract string ToString (string format);
+
+      
+     
+      public bool Is3D 
+
+      {
+        get 
         {
-            Rectangle rect = new Rectangle(5,5);
+        if(shapeType == ShapeType.Cylinder || shapeType == ShapeType.Cuboid || shapeType == ShapeType.Sphere) {
+         return true;
+        } 
+        else 
+        {
+          return false;
         }
 
-        
+        }
+      }
+
+      public enum ShapeType
+      {
+        Rectangle,
+        Ellipse,
+        Cuboid,
+        Cylinder,
+        Sphere
+      }
+
+
+       public ShapeType shapeType
+      {
+        get;
+        private set;
+
+      }
+
+
     }
 }
