@@ -32,7 +32,7 @@ namespace examination_2
                 case "G": 
                 return 
 
-                       "shapeType: " + _shapeType +  " Length: " + Length + " Width: " + Width + " Area: " + Area + " Omkrets: " + Perimeter;
+                       "shapeType: " + _shapeType +  "\nLength: " + Length + "\nWidth: " + Width + "\nArea: " + Area + " \nOmkrets: " + Perimeter + "\n";
                     
                 case "R": 
                    

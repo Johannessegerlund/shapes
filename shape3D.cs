@@ -30,8 +30,8 @@ namespace examination_2
                 case "":
                 case "G": 
                     
-                        return "shapeType: " + _shapeType +  " Length: " + Length + " Width: " + Width + " Hight: " + Hight + " Mentalarea: " + MentalArea + " TotalSurfaceArea: " +
-                        TotalSurfaceArea + " volume: " + Volume;
+                        return "shapeType: " + _shapeType +  "\nLength: " + Length + "\nWidth: " + Width + "\nHight: " + Hight + "\nMentalarea: " + MentalArea + "\nTotalSurfaceArea: " +
+                        TotalSurfaceArea + "\nvolume: " + Volume + "\n";
                     
                 case "R": 
                    

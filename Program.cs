@@ -25,7 +25,7 @@ namespace examination_2
         
 
         static void Log (Shape shape) {
-            Console.WriteLine(shape.ToString("R"));
+            Console.WriteLine(shape.ToString("G"));
         }
     }
 }
