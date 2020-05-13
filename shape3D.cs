@@ -28,12 +28,12 @@ namespace examination_2
             {
                 case null:
                 case "":
-                case "G": // long year pattern
+                case "G": 
                     
-                        return "Length: " + Length + " Width: " + Width + " Hight: " + Hight + " Mentalarea: " + MentalArea + " TotalSurfaceArea: " +
+                        return "shapeType: " + _shapeType +  " Length: " + Length + " Width: " + Width + " Hight: " + Hight + " Mentalarea: " + MentalArea + " TotalSurfaceArea: " +
                         TotalSurfaceArea + " volume: " + Volume;
                     
-                case "R": // short year pattern
+                case "R": 
                    
                     return "shapeType: " + _shapeType + " Length: " + Length + " Width: " + Width + " Hight: " + Hight + " Mentalarea: " + MentalArea + " TotalSurfaceArea: " +
                         TotalSurfaceArea + " volume: " + Volume;
