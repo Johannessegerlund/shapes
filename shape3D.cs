@@ -24,12 +24,12 @@ namespace examination_2
 
         public override string ToString(string format)
         {
+
             switch (format)
             {
                 case null:
                 case "":
                 case "G": 
-                    
                         return "shapeType: " + _shapeType +  "\nLength: " + Length + "\nWidth: " + Width + "\nHight: " + Hight + "\nMentalarea: " + MentalArea + "\nTotalSurfaceArea: " +
                         TotalSurfaceArea + "\nvolume: " + Volume + "\n";
                     

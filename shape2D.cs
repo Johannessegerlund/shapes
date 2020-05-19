@@ -15,6 +15,7 @@ namespace examination_2
           Width = width;
           Length = length;
           _shapeType = shapeType;
+       
          
         }
 
@@ -25,13 +26,13 @@ namespace examination_2
 
         public override string ToString(string format)
         {
+        
             switch (format)
             {
                 case null:
                 case "":
                 case "G": 
                 return 
-
                        "shapeType: " + _shapeType +  "\nLength: " + Length + "\nWidth: " + Width + "\nArea: " + Area + " \nOmkrets: " + Perimeter + "\n";
                     
                 case "R": 

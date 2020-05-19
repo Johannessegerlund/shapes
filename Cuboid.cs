@@ -11,6 +11,7 @@ namespace examination_2
           Length = length;
           Width = width;
           Hight = hight;
+          
     }
 }
 }
