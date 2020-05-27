@@ -9,11 +9,12 @@ namespace examination_2
 
         protected Shape2D _baseShape;
         private double _hight;
-        private ShapeType _shapeType;
+        
+
         protected Shape3D (ShapeType shapeType, Shape2D baseShape, double hight) : base(shapeType)
         {
          _baseShape = baseShape;
-         _shapeType = shapeType;
+        
         Hight = hight;
         }
 
@@ -30,13 +31,12 @@ namespace examination_2
                 case null:
                 case "":
                 case "G": 
-                        return "shapeType: " + _shapeType +  "\nLength: " + Length + "\nWidth: " + Width + "\nHight: " + Hight + "\nMentalarea: " + MentalArea + "\nTotalSurfaceArea: " +
-                        TotalSurfaceArea + "\nvolume: " + Volume + "\n";
+                        return "shapeType: " + ShapeType + "\nvolume: " + Volume   + "\nMentalarea: " + MentalArea + "\nTotalSurfaceArea: " +
+                        TotalSurfaceArea +  "\nLength: " + Length + "\nWidth: " + Width + "\nHight: " + Hight + "\n";
                     
                 case "R": 
                    
-                    return "shapeType: " + _shapeType + " Length: " + Length + " Width: " + Width + " Hight: " + Hight + " Mentalarea: " + MentalArea + " TotalSurfaceArea: " +
-                        TotalSurfaceArea + " volume: " + Volume;
+                    return "shapeType: " + ShapeType +  ", volume: " + Volume + ", Mentalarea: " + MentalArea + ", TotalSurfaceArea: " + TotalSurfaceArea +  ", Length: " + Length + ", Width: " + Width + ", Hight: " + Hight ;
                 default:
                     throw new FormatException();
             }

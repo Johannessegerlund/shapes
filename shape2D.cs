@@ -33,11 +33,11 @@ namespace examination_2
                 case "":
                 case "G": 
                 return 
-                       "shapeType: " + _shapeType +  "\nLength: " + Length + "\nWidth: " + Width + "\nArea: " + Area + " \nOmkrets: " + Perimeter + "\n";
+                       "shapeType: " + _shapeType + "\nArea: " + Area + " \nOmkrets: " + Perimeter +  "\nLength: " + Length + "\nWidth: " + Width + "\n";
                     
                 case "R": 
                    
-                    return "shapeType: " + _shapeType + " Length: " + Length + " Width: " + Width + " Area: " + Area + " Omkrets: " + Perimeter;
+                    return "shapeType: " + _shapeType + ", Area: " + Area + ", Omkrets: " + Perimeter + ", Length: " + Length + ", Width: " + Width ;
                 default:
                     throw new FormatException();
             }

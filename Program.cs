@@ -7,11 +7,30 @@ namespace examination_2
     {
         static void Main(string[] args)
         {
-            Log(random(true));
+            Console.WriteLine("Would you like 3D or 2D?");
+            string read = Console.ReadLine();
+            string treeD = "3D";
+            string twoD = "2D";
+            Console.WriteLine("choose how many shapes you would like");
+            int numOfShapes = Convert.ToInt32(Console.ReadLine());
+            int counter = 0;
+            while (counter < numOfShapes )
+            {
+                if(read == treeD)
+                {
+                Log(random(true));    
+                }
+                if (read == twoD)
+                {
+                Log(random(false)); 
+                }
+                counter ++;
+            }
               
         }
 
-        
+        // Skriv ut i konsolen vill du ha 2d eller 3d nästa fråga hur många inte fixerat tillstånd.
+        // Typ och arean
 
         static void Log (Shape shape) 
         {
