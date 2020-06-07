@@ -29,8 +29,6 @@ namespace examination_2
               
         }
 
-        // Skriv ut i konsolen vill du ha 2d eller 3d nästa fråga hur många inte fixerat tillstånd.
-        // Typ och arean
 
         static void Log (Shape shape) 
         {
